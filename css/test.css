@@ -1,0 +1,29 @@
+input[type=radio] {
+  display: none;
+}
+
+.option-con {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  gap: 1px;
+}
+.option-con label {
+  color: green;
+  padding: 5px;
+  border: 1px solid green;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.option-con label .icon {
+  display: inline-block;
+  font-size: 3rem;
+}
+.option-con label.active {
+  color: #103038;
+  border-color: #103038;
+}
+
+/*# sourceMappingURL=test.css.map */

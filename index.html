@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Covid test</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--header area-->
+<header class="container-fluid w-100 " style=" background-image: url(./Assets/SVG/Merged\ bar-61.svg); ">
+    <div class="container-fluid mx-auto" style="width: 95%; display: flex; text-align:center;">
+        <img src="./Assets/SVG/logo__sante.svg" alt="img" style="width: 50px; margin-top:4px;">
+
+    </div>
+</header>
+<main id="start-content">
+    <div class="container-fluid" style="background-color:#F4CF1B;">
+        <div id="par" class="mx-auto " style="width: 60%;">
+            <h5 class="text-dark text-center fs-4 pt-3">LA DERNIÈRE INFO MÉDICALE</h5>
+            <p  class="text-primary fs-6 text-center mx-auto pb-3" style="width: 85%;">La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur d'aggravation de l’infection. En cas de fièvre, prenez du paracétamol. N'arrêtez pas votre traitement ! Consultez votre médecin ou votre pharmacien.</p>
+        </div>
+    </div>
+    <div id="cont" class="d-flex">
+        <div id="icn" class="w-50 ">
+            <img style="width: 100%;" src="./Assets/frm.svg" alt="img">
+        </div>
+        <div id="zone2" class="mb-3 w-50"  ><h3 class="text-center text-primary fs-4 mx-auto pt-3" style="width: 90%; color: #1078AD;">Vous pensez avoir été exposé au Coronavirus COVID-19 et vous avez des symptômes ?</h3>
+            <div class=" mx-auto mt-4 mb-3" style="width: 30px;">
+                <img style="width: 60px;"  src="./Assets/SVG/1f637.svg" alt="img">
+            </div>
+            <div  id="text" class="mx-auto " style=" width: 85%;">
+                <h4 class="fs-4 text-muted text-center" style="font-weight: bold;">Je reste vigilant ?</h4>
+                <h4 class="fs-4 text-muted text-center" style="font-weight: bold;">Je programme une téléconsultation ?</h4>
+                <h4 class="fs-4 text-muted text-center" style="font-weight: bold;">J'appelle le 141 ?</h4>
+                <h4 class="fs-4 text-muted text-center mb-4" style="font-weight: bold;">Faites le test pour répondre en citoyen éclairé selon vos symptômes.</h4>
+                <button id='start-quiz-btn' class="btn btn-primary col-12 " style="background-color: #1078AD;">Demarer le test</button>
+            </div>
+        </div>
+    </div>
+</main>
+<div id="quiz-content" class="container-fluid">
+    <div class="row">
+            <div id="questions-board" class=" offset-lg-3 col-lg-6 col-sm-10 offset-sm-1 col-12">
+                <div class="questions-board__steps-containner">
+                       <div class="step active">
+                           <div class="circle circle--big">
+                               <div class="circle circle--small"></div>
+                           </div>
+                           <div class="step__text">
+                               Informations
+                           </div>
+                       </div>
+                    <div class="step">
+                        <div class="circle circle--big">
+                            <div class="circle circle--small"></div>
+                        </div>
+                        <div class="step__text">
+                            Questionnaire
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="circle circle--big">
+                            <div class="circle circle--small"></div>
+                        </div>
+                        <div class="step__text">
+                            Résultats
+                        </div>
+                    </div>
+
+               </div>
+                <div class="info-container ">
+                    <div class="info-wrapper jumbotron">
+                        <h1 class="header">
+                            Préambule
+                        </h1>
+                        <p class="paragraph-top">
+                            L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour contribuer à fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de Coronavirus COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à disposition dans cette application, ou leur adéquation à des finalités particulières, ne sont pas garantis.
+                        </p>
+                        <p >
+                            Cette application ne substitue pas votre médecin qui est plus apte à vous donner plus de précision.
+                            Les informations de cette application est le premier niveau de la détection des cas possibles du COVID-19.
+                        </p>
+                    </div>
+                    <button class="q-btn q-btn--action q-btn--start-test">
+                        Démarrer le test
+                    </button>
+                </div>
+                <div class="questions-board-wrapper">
+                    <div class="q-progress-bar">
+                        <p class="q-progress-label">2/20</p>
+                        <div class="progress-bar__progress-con"><!---range div1-->
+                            <div class="progress-bar__progress"></div><!---range div2-->
+                        </div>
+                    </div>
+                    <div class="question-content">
+                        <!-- this will be inserted form js-->
+                        <div class="question-body">
+                            <div class="question-text">qsdsqdsdfdsf</div>
+                            <form action="#" class="answer-form">
+                                <!-- form inputs will be generated form js-->
+                              <div class="radiocontainer">
+                                    <label class="radio ">نعم</label>
+                                    <input type="radio" class="radiobutton">
+                                </div>
+                                <div class="inputtext my-5">
+                                    <label id="labeltext">درجة</label>
+                                    <input type="text" placeholder="37" class="rounded textinput">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="quiz-action-btns">
+                    <button class="q-btn q-btn--back q-btn--action">Question précédente</button>
+                    <button class="q-btn q-btn--next q-btn--action">Question suivante</button>
+                    <button class="q-btn q-btn--show-result q-btn--action">Voire le resultat</button>
+                </div>
+                </div>
+                <div class="resultat-con">
+                    <div class="container mt-5 text-center">
+                        <h1 id="title"></h1>
+                    </div>
+                    <div class="container mt-5 text-center">
+                        <div class="mx-auto p-3" style="max-width: 500px; background-color: #1078AD; border-radius: 20px;">
+                            <div  class="mt-4" style="color: #F4CF1B; padding: 10px;">
+                                <h3 id="message"></h3>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <button class="q-btn q-btn--action q-btn--action-restart-test"> نعاود الاختبار</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/resultAlgo.js"></script>
+<script src="js/data.js"></script>
+<script src="js/confetti.js"></script>
+</body>
+</html>

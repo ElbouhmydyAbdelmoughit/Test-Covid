@@ -1,0 +1,25 @@
+@media screen and (max-width:400px){
+   body{
+       width: 100%;
+   }
+   #cont{
+       display: flex;
+       flex-direction: column;
+   }
+   #par{
+    width: 100% !important;
+   }
+   #par h5{
+    font-size: 15px !important;
+   }
+   #par p{
+    font-size: 13px !important;
+   }
+   #icn{
+       width: 100% !important;
+   }
+   #zone2{
+    width: 100% !important;
+   }
+
+}
